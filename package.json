@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "startold": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "react-native start",
+    "android": "node bootstrap && react-native run-android --no-packager",
+    "ios": "node bootstrap && react-native run-ios --no-packager",
+    "iosx": "react-native run-ios --no-packager --simulator=\"iPhone X\"",
     "test": "jest"
   },
   "dependencies": {

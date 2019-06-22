@@ -6,7 +6,7 @@ import immutableTransform from 'redux-persist-transform-immutable'
 import { composeWithDevTools } from 'remote-redux-devtools'
 
 import createSagaMiddleware from 'redux-saga'
-import rootSaga from './sagas'
+import rootSaga from '../modules/sagas'
 
 import data from './reducers'
 
